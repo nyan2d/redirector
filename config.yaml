@@ -1,0 +1,3 @@
+hosts:
+  - source: localhost
+    destination: http://localhost:8080
