@@ -14,6 +14,6 @@ func main() {
 	}
 
 	proxy := rproxy.NewRProxy(cfg)
-	err = proxy.Listen(":8080")
+	err = proxy.Listen(cfg.Address)
 	log.Println(err)
 }

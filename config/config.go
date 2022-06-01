@@ -14,7 +14,8 @@ type Host struct {
 }
 
 type Config struct {
-	Hosts []Host `yaml:"hosts"`
+	Address string `yaml:"address"`
+	Hosts   []Host `yaml:"hosts"`
 }
 
 func Read(r io.Reader) (*Config, error) {
